@@ -22,9 +22,10 @@ print(my_other_list)
 my_other_list.pop() # Eliminar el último elemento de la lista
 my_other_list.pop(2) # Eliminar un elemento en una posición específica 
 print(my_other_list.pop()) # Eliminar el último elemento de la lista y retornarlo
-del my_other_list[0] # Eliminar un elemento en una posición específica
+
 my_new_list = my_list.copy() # Copiar una lista
 my_list.clear() # Eliminar todos los elementos de la lista
+del my_other_list # Eliminar un elemento en una posición específica, no es lo mismo que clear porque elimina la lista
 print(my_new_list.reverse()) # Invertir el orden de la lista
 my_new_list.sort() # Ordenar la lista de menor a mayor
 my_new_list.sort(reverse=True) # Ordenar la lista de mayor a menor
