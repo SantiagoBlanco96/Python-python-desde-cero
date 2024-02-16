@@ -18,4 +18,3 @@ print(my_tuple[-1])
 print(my_tuple[1:3]) # Subtupla (slice) de una tupla
 print(my_tuple.count(35)) # Count (cuenta cuantas veces aparece un elemento)
 print(my_tuple.index(35)) # Index (busca la primera aparición de un elemento) imprime la posición del elemento
-
