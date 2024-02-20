@@ -86,14 +86,28 @@
 # print("Conteo de números impares:", odd_numbers)
 # print("Conteo de números pares:", even_numbers)
 
-steps = 0
-n = int(input("Ingrese un número natural: "))
+# steps = 0
+# n = int(input("Ingrese un número natural: "))
 
-while n != 1:
-    if n % 2 == 0:
-        n = n // 2
-    else:
-        n = n * 3 + 1
-    steps += 1
-    print(n)
-print("Pasos = ", steps)
+# while n != 1:
+#     if n % 2 == 0:
+#         n = n // 2
+#     else:
+#         n = n * 3 + 1
+#     steps += 1
+#     print(n)
+# print("Pasos = ", steps)
+
+# beatles= []
+# print("Paso 1: ", beatles)
+# beatles.append("John Lennon")
+# beatles.append("Paul McCartney")
+# beatles.append("George Harrison")
+# print("Paso 2: ", beatles)
+# for i in range(2):
+#     beatles.append(input("Agrega a un nuevo miembro: "))
+# print("Paso 3: ", beatles)
+# del beatles[-1]
+# del beatles[-1]
+# print("Paso 4: ", beatles)
+# beatles.insert(0, "Ringo Starr")
