@@ -283,16 +283,18 @@ Complementa el código en el editor.
 #     if is_prime(i + 1):
 #         print(i + 1, end=" ")
 # print()
-
-my_list =  ['Mary', 'had', 'a', 'little', 'lamb']
-
-
-def my_list(my_list):
-    del my_list[3]
-    my_list[3] = 'ram'
+foo = (1, 2, 3)
+foo.index(0)
 
 
-print(my_list(my_list))
+
+
+
+
+
+
+
+
 
 
 
