@@ -283,27 +283,3 @@ Complementa el código en el editor.
 #     if is_prime(i + 1):
 #         print(i + 1, end=" ")
 # print()
-foo = (1, 2, 3)
-foo.index(0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
