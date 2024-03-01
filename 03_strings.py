@@ -45,3 +45,21 @@ print(lenguaje.lower()) # Lower (pone todo en minúscula)
 print(lenguaje.replace("P", "J")) # Replace (reemplaza una letra por otra)
 print(lenguaje.count("P")) # Count (cuenta cuantas veces aparece una letra)
 print(lenguaje.find("t")) # Find (busca la primera aparición de una letra) imprime la posición de la letra
+print(lenguaje.center(20, "-")) # Center (centra el string en una longitud determinada) y si el espacio es pequeño lo rellena con el caracter que se le pase
+lenguaje.endswith("n") # Endswith (verifica si el string termina con una letra determinada) imprime True o False
+lenguaje.startswith("P") # Startswith (verifica si el string comienza con una letra determinada) imprime True o False
+lenguaje.isalnum() # Isalnum (verifica si el string es alfanumérico) imprime True o False
+lenguaje.isalpha() # Isalpha (verifica si el string es alfabético) imprime True o False
+lenguaje.isdigit() # Isdigit (verifica si el string es numérico) imprime True o False
+lenguaje.islower() # Islower (verifica si el string está en minúsculas) imprime True o False
+lenguaje.isupper() # Isupper (verifica si el string está en mayúsculas) imprime True o False
+lenguaje.isspace() # Isspace (verifica si el string está compuesto por espacios) imprime True o False
+lenguaje.istitle() # Istitle (verifica si el string está en formato de título) imprime True o False
+lenguaje.lstrip() # Lstrip (elimina los espacios en blanco a la izquierda)
+lenguaje.replace("P", "J") # Replace (reemplaza una letra por otra)
+lenguaje.rfind("t") # Rfind (busca la última aparición de una letra) imprime la posición de la letra
+lenguaje.rstrip() # Rstrip (elimina los espacios en blanco a la derecha)
+lenguaje.strip() # Strip (elimina los espacios en blanco a ambos lados)
+lenguaje.swapcase() # Swapcase (intercambia mayúsculas por minúsculas y viceversa)
+lenguaje.title() # Title (pone en formato de título)
+
