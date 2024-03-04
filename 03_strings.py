@@ -62,4 +62,3 @@ lenguaje.rstrip() # Rstrip (elimina los espacios en blanco a la derecha)
 lenguaje.strip() # Strip (elimina los espacios en blanco a ambos lados)
 lenguaje.swapcase() # Swapcase (intercambia mayúsculas por minúsculas y viceversa)
 lenguaje.title() # Title (pone en formato de título)
-
