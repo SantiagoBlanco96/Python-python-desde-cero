@@ -1,7 +1,7 @@
 # Modulos
 # Un módulo es un archivo que contiene definiciones y declaraciones de Python.
 # import 10_funciones # Importamos el módulo 10_funcione, no funciona por el nombre del archivo
-import module # Importamos el módulo module
+import Primera_Parte.module as module # Importamos el módulo module
 
 print(module.sum_two_values(5,3))
 
