@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">        
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+        <script >
+            // Entrenamos una red neuronal para aproximar f(x) = √ (3+4 x)
+            
+            const model = tf.sequential();
+            model.add(tf.layers.dense({units: 1, inputShape: [1]}));
+
+            // Especificamos la pérdida y la función optimizadora del modelo
+            model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+
+            // Datos de entrenamiento
+            const xs = tf.tensor2d([ -25, -10, -5, -2, -1, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1, 2, 5, 10, 25], [17, 1]);
+            const ys = tf.tensor2d([0.00000, 0.00005, 0.00669, 0.11920, 0.26894, 0.32082, 0.37754, 0.43782, 0.50000, 0.56218, 0.62246, 0.67918, 0.73100, 0.88080, 0.99330, 0.99999, 1.00000], [17, 1]);
+            
+            model.fit(xs, ys, {epochs: 5000}).then(() => {
+                //Usamos el model para predecir valores
+                x = [-25, -10, -5, -2, -1, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1, 2, 5, 10, 25];
+                for (i = 0; i < x.length; i++) {
+                    model.predict(tf.tensor2d([x[i]], [1,1])).print();
+                }
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
